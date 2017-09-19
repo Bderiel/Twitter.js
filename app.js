@@ -35,6 +35,7 @@ nunjucks.render('index.html', locals, function (err, output) {
 // });
 
 
+app.use(express.static('public'))
 
 app.listen(3000, function(){
     console.log('listening');
